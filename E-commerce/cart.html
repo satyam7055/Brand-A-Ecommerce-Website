@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width initial-scale=1 shrink-to fit=no">
+    	<title>Add to cart</title>
+    	<link rel="stylesheet" type="text/css" href="assets/styles/cart.css">
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    	<script src="https://kit.fontawesome.com/007e1eb28c.js" crossorigin="anonymous"></script>
+    	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+    	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	
+</head>
+<body class="bg-light">
+	
+
+  <!-------------------NAVBAR------------->
+ <section class="header_menu" id="header_menu">
+  <div class="container-fluid px-0 shadow height:30">
+    
+
+  <div class="nav-bar"> 
+  <nav class="navbar navbar-expand-sm navbar-dark bg-black">
+  <a class="navbar-brand" href="#"><img src="assets/img1/id1.png" style="border-radius:100%"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+
+    <ul class="navbar-nav ml-auto">
+      <form class="searchform">
+        <div class="form-group d-flex">
+        <input type="search" class="form-control pl-3" placeholder="Search">
+        <button type="submit" placeholder="" class="form-control search">
+        <span class="fas fa-search text-dark"></span></button></div>
+      </form>
+  </ul>
+     
+    <ul class="navbar-nav ml-auto">
+      
+      <li class="nav-item active">
+        <a class="nav-link" href="E-Commerce.html">Home</a>
+      </li><li class="nav-item">
+        <a class="nav-link" href="product_list.html">Product</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="category.html">Category</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+      
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"><i class="fa fa-user"></i>
+          Profile</a>
+        <div class="dropdown-menu">
+           <p class="text-center">Welcome to BRAND</p>
+           <div class="dropdown-divider"></div> 
+          <a class="dropdown-item" href="#">My Account</a>
+          <a class="dropdown-item" href="login.html">Log In</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="signup.html">Sign Up</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fa fa-shopping-cart fa-1.5x"></i>Cart</a>
+      </li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+  </div>
+</section>
+<!--------------nav ends---------->
+
+<!------------Cart Area begins--------->
+
+<section class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-11 mx-auto">
+      <div class="row mt-3 gx-3">
+        <!-------left side--------->
+        <div class="col-md-12 col-lg-8 col-12 mx-auto main-cart mb-lg-0 mb-5">
+          <div class="card p-4">
+            <h2 class="py-2 font-weight-bold">Cart(2 items)</h2>
+            <div class="row">
+              <div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+                <img src="assets/img1/id8.jpg" class="img2-fluid" alt="cart-img">
+              </div>
+              <!------cart product detail----->
+              <div class="col-md-7 col-12 mx-auto px-4 mt-2">
+                <div class="row">
+                  <!------product name----->
+                  <div class="col-6 card-title">
+                    <h2 class="mb-4 product_name">Spark Shirts</h2>
+                    <p class="mb-2">SHIRT - CASUAL</p>
+                    <p class="mb-2">COLOR: Cream</p>
+                    <p class="mb-3">Size: L</p>
+                  </div>
+
+                  <!-----quant inc dec----->
+                  <div class="col-6">
+                    <ul class="pagination justify-content-end set_quantity">
+                        <li class="page-item">
+                          <button class="page-link" onclick="decreaseNumber('textbox','itemval')"><i class="fas fa-minus"></i></button></li>
+                        <li class="page-item"><input type="text" name="" class="page-link" value="0" id="textbox"></li>
+                        <li class="page-item" onclick="increaseNumber('textbox','itemval')"><button class="page-link"><i class="fas fa-plus"></i></button></li>
+                      </ul>   
+                  </div>
+                </div>
+                <!---------remove move and price---->
+                <div class="row">
+                  <div class="col-8 d-flex justify-content-between remove_wish">
+                    <p><i class="fas fa-trash-alt"></i>REMOVE</p>
+                    <p><i class="fas fa-heart"></i>MOVE TO WISHLIST</p>
+                  </div>
+                  <div class="col-4 d-flex justify-content-end price_money">
+                    <h3><i class="fas fa-inr"></i><span id="itemval">0.00</span></h3>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+            <!------second product------->
+           <div class="card p-4">
+             <div class="row">
+              <div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+                <img src="assets/img1/id7.jpg" class="img2-fluid" alt="cart-img">
+              </div>
+              <!------cart product detail----->
+              <div class="col-md-7 col-12 mx-auto px-4 mt-2">
+                <div class="row">
+                  <!------product name----->
+                  <div class="col-6 card-title">
+                    <h2 class="mb-4 product_name">Adidas Maxi Dress</h2>
+                    <p class="mb-2">Party Wear</p>
+                    <p class="mb-2">COLOR: White</p>
+                    <p class="mb-3">Size: S</p>
+                  </div>
+
+                  <!-----quant inc dec----->
+                  <div class="col-6">
+                    <ul class="pagination justify-content-end set_quantity">
+                        <li class="page-item">
+                          <button class="page-link" onclick="decreaseNumber('textbox1','itemval1')"><i class="fas fa-minus"></i></button></li>
+                        <li class="page-item"><input type="text" name="" class="page-link" value="0" id="textbox1"></li>
+                        <li class="page-item" onclick="increaseNumber('textbox1','itemval1')"><button class="page-link"><i class="fas fa-plus"></i></button></li>
+                      </ul>   
+                  </div>
+                </div>
+                <!---------remove move and price---->
+                <div class="row">
+                  <div class="col-8 d-flex justify-content-between remove_wish">
+                    <p><i class="fas fa-trash-alt"></i>REMOVE</p>
+                    <p><i class="fas fa-heart"></i>MOVE TO WISHLIST</p>
+                  </div>
+                  <div class="col-4 d-flex justify-content-end price_money">
+                    <h3><i class="fas fa-inr"></i><span id="itemval1">0.00</span></h3>
+                  </div>
+                </div>
+              </div> 
+            </div>
+            </div>
+        </div>
+
+        <!--------left side ends-------->
+        <!-------right side begins-------->
+      <div class="col-md-12 col-lg-4 col-11 mx-auto mt-lg-0 mt-md-5">
+        <div class="right_side p-3 shadow bg-white">
+          <h2 class="product_name mb-5">The total amount</h2>
+          <div class="price_indiv d-flex justify-content-between">
+            <p>Product amount</p>
+            <p><i class="fas fa-inr"></i><span id="product_total_amount">0.00</span></p>
+          </div>
+          <div class="price_indiv d-flex justify-content-between">
+            <p>Shipping Charge</p>
+            <p><i class="fas fa-inr"></i><span id="shipping_charge">49.00</span></p>
+          </div>
+          <hr />
+          <div class="total-amt d-flex justify-content-between font-weight-bold">
+            <p>The total amount of(including VAT)</p>
+            <p><i class="fas fa-inr"></i><span id="total_cart_amt">0.00</span></p>
+          </div>
+          <button class="btn btn-primary text-uppercase">Checkout</button>
+        </div>
+        <!--------discount--------->
+        <div class="discount_code mt-3 shadow">
+          <div class="card">
+            <div class="card-body">
+              <a class="d-flex justify-content-between" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-control="collapseExample">Add a discount coupon
+               <span><i class="fas fa-chevron-down pt-1"></i></span>
+              </a>
+              <div class="collapse" id="collapseExample">
+                <div class="mt-3">
+                  <input type="text" name="" id="discount_code1" class="form-control font-weight-bold" 
+                  placeholder="Enter the coupon code">
+                  <small id="error_trw" class="text-dark mt-3">code: DD100</small>
+                </div>
+                <button class="btn btn-primary btn-sm mt-3" onclick="discount_code()">Apply</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-3 shadow p-3 bg-white">
+          <div class="pt-4">
+            <h5 class="mb-4">Expected Delivery Date</h5>
+            <p>Within one week</p>
+          </div>
+        </div>
+      </div>
+     </div>
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript">
+
+  var product_total_amount = document.getElementById('product_total_amount');
+  var shipping_charge = document.getElementById('shipping_charge');
+   var total_cart_amt = document.getElementById('total_cart_amt');
+   var discountCode = document.getElementById('discount_code1');
+
+  const decreaseNumber = (incdec,itemvalue) =>{
+    var itemval = document.getElementById(incdec);
+    var itemvalue = document.getElementById(itemvalue);
+    //console.log(itemval.value);
+    if(itemval.value<=0){
+      itemval.value=0;
+      alert('negative values not allowed');
+    }else{
+      itemval.value = parseInt(itemval.value)-1;
+      itemval.style.background = '#fff';
+      itemval.style.color = '#000';
+      itemvalue.innerHTML = parseInt(itemvalue.innerHTML)-999;
+      product_total_amount.innerHTML = parseInt(product_total_amount.innerHTML)-999;
+      total_cart_amt.innerHTML = parseInt(product_total_amount.innerHTML)+parseInt(shipping_charge.innerHTML);
+    }
+  }
+
+  const increaseNumber = (incdec,itemvalue) =>{
+    var itemval = document.getElementById(incdec);
+    var itemvalue = document.getElementById(itemvalue);
+    //console.log(itemval.value);
+    if(itemval.value>=7){
+      itemval.value=7;
+      alert('max 7 allowed');
+      itemval.style.background = 'red';
+      itemval.style.color = '#fff';
+    }else{
+      itemval.value = parseInt(itemval.value)+1;
+      itemvalue.innerHTML = parseInt(itemvalue.innerHTML)+999;
+      product_total_amount.innerHTML = parseInt(product_total_amount.innerHTML)+999;
+       total_cart_amt.innerHTML = parseInt(product_total_amount.innerHTML)+parseInt(shipping_charge.innerHTML);
+    }
+  }
+
+  const discount_code = () => {
+    let totalamountcurr = parseInt(total_cart_amt.innerHTML);
+    let error_trw =document.getElementById('error_trw');
+    if(discountCode.value === 'DD100'){
+   
+      let newtotalamt = totalamountcurr- 600;
+      total_cart_amt.innerHTML = newtotalamt;
+      error_trw.innerHTML = "Excellent!!!!";
+    }else{
+      error_trw.innerHTML = "Please Enter a valid Code";
+    }
+  }
+</script> 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!------------Cart area ends----------->

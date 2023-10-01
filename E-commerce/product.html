@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+  <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width initial-scale=1 shrink-to fit=no">
+      <title>Product Page</title>
+      <link rel="stylesheet" type="text/css" href="assets/styles/style4.css">
+      <link rel="stylesheet" type="text/css" href="assets/styles/product.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://kit.fontawesome.com/007e1eb28c.js" crossorigin="anonymous"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+  
+
+   <!-------------------NAVBAR------------->
+ <section class="header_menu" id="header_menu">
+  <div class="container-fluid px-0 shadow height:30">
+    
+
+  <div class="nav-bar"> 
+  <nav class="navbar navbar-expand-sm navbar-dark bg-black">
+  <a class="navbar-brand" href="E-Commerce.html"><img src="assets/img1/id1.png" style="border-radius:100%"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+
+    <ul class="navbar-nav ml-auto">
+      <form class="searchform">
+        <div class="form-group d-flex">
+        <input type="search" class="form-control pl-3" placeholder="Search">
+        <button type="submit" placeholder="" class="form-control search">
+        <span class="fas fa-search text-dark"></span></button></div>
+      </form>
+  </ul>
+     
+    <ul class="navbar-nav ml-auto">
+      
+      <li class="nav-item active">
+        <a class="nav-link" href="E-Commerce.html">Home</a>
+      </li><li class="nav-item">
+        <a class="nav-link" href="product_list.html">Product</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="category.html">Category</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+      
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"><i class="fa fa-user"></i>
+          Profile</a>
+        <div class="dropdown-menu">
+           <p class="text-center">Welcome to Brand</p>
+           <div class="dropdown-divider"></div> 
+          <a class="dropdown-item" href="#">My Account</a>
+          <a class="dropdown-item" href="#">Log In</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Sign Up</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fa fa-shopping-cart fa-1.5x"></i>Cart</a>
+      </li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+  </div>
+</section>
+<!--------------nav ends---------->
+
+<!-------------slider-------------->
+
+<section id="main">
+<div id="Carousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#Carousel" data-slide-to="1"></li>
+    <li data-target="#Carousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/img1/id2.jpg" class="carousel-img">
+        <div class="carousel-caption d-md-block text-center mb-5">
+          <h2 class="display-3 title-color">Diwali Offers</h2>
+          <p>BRAND Big Billions Day Get UPto 80% off</p>
+                <a href="#" class="btn btn-color slide-btn btn-lg">
+                Learn Now</a>
+
+      </div>
+    </div>
+    <div class="carousel-item carousel">
+      <img src="assets/img1/id3.jpg" class="carousel-img">
+        <div class="carousel-caption d-md-block mb-5">
+          <h2 class="display-3 title-color">Accessories and Gadgets</h2>
+          <p>BRAND Big Billions Day Get UPto 50% Using SBI Credit/Debit Cards</p>
+          <a href="#" class="btn btn-color slide-btn btn-lg">Learn More</a>       
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="assets/img1/id4.jpg" class="carousel-img">
+        <div class="carousel-caption d-md-block mb-5">
+          <h2 class="display-3 title-color"><font color="blue">Men and Women Garments</h2>
+          <p><font color="blue">brand Big Billions Day Get 80% Off on clothes</p>
+          <a href="#" class="btn btn-color slide-btn btn-lg">Learn More</a>
+        </div>        
+    </div>
+     <div class="arrow">
+    <a href="#Carousel" data-slide="prev" class="carousel-control-prev">
+      <span><i class="fa fa-angle-double-left"></i></span></a>
+
+    <a href="#Carousel" data-slide="next" class="carousel-control-next">
+      <span><i class="fa fa-angle-double-right"></i></span></a> 
+    </div>
+  </div>
+</div>
+</section>
+<!---------sliderends---------->
+<!-----------single product------------------>
+<section class="mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mb-5">
+        <a href="#" class="img-bg">
+          <img src="assets/img1/aa4.jpg" height="1200" width="300" class="img-fluid" alt="">
+        </a>
+      </div>
+  <div class="col-lg-6 prod-des pl-md-5">
+     <h3> Peter England</h3>
+     <div class="rating d-flex">
+      <p class="text-left mr-4">
+        <a href="#" class="mr-2 text-dark">5.0</a>
+        <a href="#"><span class="fas fa-star"></span></a>
+        <a href="#"><span class="fas fa-star"></span></a>
+        <a href="#"><span class="fas fa-star"></span></a>
+        <a href="#"><span class="fas fa-star"></span></a>
+        <a href="#"><span class="fas fa-star"></span></a>
+      </p>
+      <p class="text-left mr-4">
+        <a href="#" class="mr-2 text-dark">97.6<span style="color:#2c2e2c8a">Rating</span></a>
+      </p>
+  </div>
+    <p class="amount"><i class="fa fa-inr"></i> 5999 (40% OFF)</p>
+    <p>100% Original Products<br>
+Free Delivery on order above Rs. 499<br>
+Pay on delivery might be available<br>
+Easy 30 days returns and exchanges<br>
+Try & Buy might be available</p>
+<p>Get 20% cashback upto INR 1500 as BRAND Pay Balance<br> on minimum purchase of ₹ 500 on next order on BRAND Fashion.</p>
+<div class="row mt-4">
+  <div class="input-group col-md-6 d-flex mb-3">
+    <button type="button" class="minus btn mr-2"><i class="fa fa-minus"></i></button>
+    <input type="text" name="quantity" class="form-control input-number text-center" value="1"min="1" max="50">
+    <button type="button" class="plus btn ml-2"><i class="fa fa-plus"></i></button>
+       </div>
+     </div>
+<p><a href="cart.html" class="btn btn-bg py-2 px-3 mr-2">
+  Buy Now
+</a>
+   </div>
+    </div>
+  </div>
+</section>
+
+<!------------Description Area--------------->
+<section class="des-area">
+  <div class="container">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a href="#home" class="nav-link" id="home-tab" data-toggle="tab" role="tab" aria-controls="home" aria-selected="true">Description</a></li>
+      <li class="nav-item">
+        <a href="#comment" class="nav-link" id="comment-tab" data-toggle="tab" role="tab" aria-controls="comment" aria-selected="false">Comments</a></li>
+        <li class="nav-item">
+        <a href="#review" class="nav-link active" id="review-tab" data-toggle="tab" role="tab" aria-controls="review" aria-selected="false">Reviews</a></li>  
+    </ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane"id="home" role="tabpanel"aria-labelledby="home-tab">
+    <p>Girl Party Wear One Piece Short Dress, Half Sleeves</p>
+  </div>
+  <div class="tab-pane"id="comment" role="tabpanel"aria-labelledby="comment-tab">
+    <div class="row">
+      <div class="col-lg-6">
+        <div>
+        <div class="review-sec">
+          <div class="item">
+            <div class="d-flex"> 
+            <img src="assets/img1/review1.jpg"alt="">
+            </div>
+            <div class="item-sec">
+              <h4>Mariya Saropa</h4>
+              <h5>8/02/2020 at 6:15pm</h5>
+              <a href="#" class="reply-btn"></a>
+
+          </div>
+        </div>
+        <p>Sephora has a truly unique way of collecting customer reviews. The company offers users a special area of their site called, My Beauty Bag. My Beauty Bag is a personalized area that collects the user’s favorite products and organizes recent purchases as well as product reviews.</p>
+      </div>
+      <div class="review-sec reply">
+        <div class="item">
+          <div class="d-flex">
+            <img src="assets/img1/review2.jpg"alt="">
+          </div>
+          <div class="item-sec">
+            <h4>Jonny Devil</h4>
+            <h5>7/06/2020 at 8:05am</h5>
+            <<a href="#" class="reply-btn"></a>
+          </div>
+        </div>
+         
+         <p>Society 6 offers the ability to do the entire product review directly in the email. They make it easy by including the ability
+             to leave a star rating for the product AND write your text comments without navigating away from the email.</p>
+      </div>
+      <!----------------------------->
+      <div class="review-sec reply">
+        <div class="item">
+          <div class="d-flex">
+            <img src="assets/img1/review3.jpg"alt="">
+          </div>
+          <div class="item-sec">
+            <h4>Shubham Kumar</h4>
+            <h5>10 November,2020 at 10:10pm</h5>
+            <<a href="#" class="reply-btn"></a>
+          </div>
+        </div>
+         
+         <p>Society 6 offers the ability to do the entire product review directly in the email. They make it easy by including the ability to leave a star rating for the product AND write your text comments without navigating away from the email.</p>
+      </div>
+      <!----------------------------->
+       
+    </div>
+  </div>
+  <!--------------Review sec--------------->
+  <div class="col-lg-4">
+    <div class="review-add">
+      <h4>Post a Comment</h4>
+      <form class="row contact-form">
+        <div class="col-md-12">
+          <div class="form-group">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="form-group">
+            <input type="email" class="form-control" id="email" placeholder="Email Address">
+
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="form-group">
+            <input type="text" class="form-control" id="number" placeholder="Phone Number">
+        </div>
+      </div>
+      <div class="col-md-12">
+          <div class="form-group">
+            <textarea class="form-control" name="message"
+            id="message"rows="4"placeholder="Message"></textarea>
+        </div>
+      </div>
+      <div class="col-md-12 text-center">
+        <button type="submit"value="submit"class="sub-btn">Submit Now</button>
+      </div>
+
+      </form>
+  </div>
+</div>
+</div>
+</div>
+<div class="tab-pane" id="review" role="tabpanel" aria-labelledby="review-tab">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="row review-rate">
+        <div class="col-6">
+          <div class="review-sum">
+            <h5>Overall</h5>
+            <h4>4.5</h4>
+            <h6>(03 Reviews)</h6>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="star-rate">
+            <h3>Based on 3 Reviews</h3>
+            <ul class="list">
+              <li>
+                <a href="#">5 Star
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              01</a></li>
+               <li>
+                <a href="#">4 Star
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              01</a></li>
+
+               <li>
+                <a href="#">3 Star
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              01</a></li>
+               <li>
+                <a href="#">2 Star
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              01</a></li>
+               <li>
+                <a href="#">1 Star
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              01</a></li>
+
+              
+            </ul>
+        </div>
+      </div>
+
+    </div>
+    <div class="review-sec">
+      <div class="item">
+        <div class="d-flex">
+          <img src="assets/img1/aa15.jpg" alt="">
+      </div>
+      <div class="item-sec">
+        <h4>M.S.Dhoni</h4>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+    </div>
+    <p>Target’s customer review email is a good mix of all the best elements listed above. It has a clear title that stands out from the rest of the text; It offers an easy-to-see star rating that can be done directly in the email; and a bold CTA if you want to leave a more in-depth review.</p>
+
+  </div>
+  <div class="review-sec">
+    <div class="item">
+        <div class="d-flex">
+          <img src="assets/img1/review2.jpg" alt="">
+      </div>
+      <div class="item-sec">
+        <h4>Serena Homie</h4>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half"></i>
+      </div>
+    </div>
+    <p>Increase the relevance of your review by addressing your overall experience, including the level of customer service you received. Tell people how helpful the company was! Focusing on only one element, such as product quality or delivery options, provides limited insight to readers.</p>
+  </div>
+  <div class="review-sec">
+    <div class="item">
+        <div class="d-flex">
+          <img src="assets/img1/review3.jpg" alt="">
+      </div>
+      <div class="item-sec">
+        <h4>Serena Homie</h4>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+      </div>
+    </div>
+    <p>There’s no rule against only writing a handful of words in a review, but the more specific you can be, the more likely the review is to be useful. We suggest writing from your own individual perspective.</p>
+  </div>
+  
+</div>
+  <div class="review-add">
+    <h4>Add a Review</h4>
+    <p>Your rating:</p>
+    <ul class="list">
+      <li>
+        <a href="#"><i class="fa fa-star"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa fa-star"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa fa-star"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa fa-star"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa fa-star"></i></a>
+      </li>
+    </ul>
+    <div class="col-lg-6">
+    <p>Matters</p>
+    <form class="row contact-form">
+      <div class="col-md-12">
+         <div class="form-group">
+           <input type="text" class="form-control" name="name" placeholder="Your Name">
+         </div>
+      </div>
+      <div class="col-md-12">
+        <div class="form-group">
+          <input type="email" class="form-control" name="email" placeholder="Email Address">
+          
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="form-group">
+          <textarea class="form-control" name="message" rows="5" placeholder="Review"></textarea>
+          
+        </div>
+      </div>
+      <div class="col-md-12">
+       <button type="submit" value="submit" class="sub-btn">Submit Now</button>
+      </div>
+    </form>
+       
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+</section>
+
+
+<!----------Follow Us Page--------------->
+
+<section class="follow">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h2>Follow Us On</h2></div>
+      <div class="col-md-3 follow-box">
+                    <span class="img2"><i class="fa fa-facebook"></i>Facebook</span>      
+      </div>
+      <div class="col-md-3 follow-box">
+                    <span class="img2"><i class="fa fa-instagram"></i>Instagram</span>      
+      </div>
+      <div class="col-md-3 follow-box">
+                    <span class="img2"><i class="fa fa-twitter"></i>Twitter</span>      
+      </div>
+      <div class="col-md-3 follow-box">
+                    <span class="img2"><i class="fa fa-linkedin"></i>LinkedIn</span>      
+      </div>
+  </div>
+  </div>
+</section>
+
+
+
+<!------------footer---------------------->
+
+<section class="footer py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <img src="assets/img1/id1.png" style="border-radius:100%">
+        <p>A BRAND group of Companies <br>Owned by Satyam Kumar</p>
+        
+      </div>
+      <div class="col-md-3">
+        <h1>Quick Links</h1>
+        <p>About Us</p>
+        <p>Contact Us</p>
+        <p>Career</p>
+        <p>Affiliate</p>
+      </div>
+      
+
+      <div class="col-md-3">
+        <h1>Support</h1>
+        <p>Frequently Asked Questions</p>
+        <p>Terms and Conditions</p>
+        <p>Privacy Policy</p>
+        <p>Report a payment issue</p>
+      </div>
+            
+            <div class="col-md-3 footer-image">
+              <h1>Download App</h1>
+              <img src="assets/img1/app-store.png" class="play-img">
+              <img src="assets/img1/play.jpg">
+    </div>
+  </div>
+  <hr>
+  <p class="copyright">Made By  <i class="fa fa-heart-o"></i>Satyam Kumar</p>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

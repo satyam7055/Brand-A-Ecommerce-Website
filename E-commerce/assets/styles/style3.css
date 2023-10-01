@@ -1,0 +1,131 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: lightcoral;
+	font-family: sans-serif;
+}
+.navbar{
+	background-image: linear-gradient(lightblue,red);
+	padding: 0 !important;
+}
+.navbar-brand{
+	
+	height: 40px;
+	padding-left: 20px;
+}
+.navbar-brand img{
+	width: 80px;
+	height: 40px;
+}
+.navbar-nav li{
+	padding: 0 10px;
+}
+
+.navbar-nav li a{
+    display: inline-block;
+    padding: 10px 30px;
+    padding-right: 20px;
+	margin-top: 8px;
+	margin-bottom: 3px;
+	border-radius: 6px;	
+	color: #fff !important;
+	font-weight: 600;
+	float: right;
+	text-align: left;
+}
+.navbar-nav li a:hover{
+	
+	color: #000 !important;
+	background: white;
+}
+.navbar-nav ul{
+	padding-right: 5px;
+}
+
+.btn{
+	color: white !important;}
+.fa-bars{
+	color: #fff;
+	font-size: 30px !important;
+}
+.navbar-toggler{
+	outline: none !important;
+
+}
+.form-control{
+	margin-top: 9px;
+	margin-left: 10px;
+	border: 1px solid orange !important;
+	border-top-left-radius: 20px !important;
+	border-top-right-radius: 0px !important;
+	border-bottom-left-radius: 20px !important;
+	border-bottom-right-radius: 0 !important;
+	box-shadow: none;
+}
+.input-group-text{
+	background: orange;
+	border: 1px solid orange !important;
+	margin: 9px 10px 3px 0;
+	border-top-left-radius: 0px !important;
+	border-top-right-radius: 20px !important;
+	border-bottom-left-radius: 0px !important;
+	border-bottom-right-radius: 20px !important;
+	cursor: pointer;
+
+}
+.search-box{
+	display: inline-flex;
+	width: 20%;
+	padding-right: 15px;
+}
+.fa-search{
+	color: red;
+}
+.cart{padding-right:5px;}
+.cart .fa-shopping-cart{
+	padding-right: 10px;
+}
+.login{
+	padding-right: 15px;
+}
+.login a{
+	display: block;
+    padding: 5px 10px;
+    padding-right: 10px;
+	margin-top: 8px;
+	margin-bottom: 3px;
+    border: 2px solid skyblue;
+    border-top-left-radius: 6px !important;
+	border-top-right-radius: 6px !important;
+	border-bottom-left-radius: 6px !important;
+	border-bottom-right-radius: 6px !important;
+	color: #fff !important;
+	font-weight: bold;
+}
+.login a:hover{
+	text-decoration: none;
+}
+@media only screen and (max-width:980px){
+	.fa-bars{
+	color: #fff;
+	font-size: 30px !important;  }
+	.navbar-toggler{
+	outline: none !important;
+     color: #fff;
+     }
+	.top-nav-bar{
+		height: 100px;
+		border-bottom: 0;
+	}
+	.search-box{width:50%;}
+	.cart{
+		width: 33%;
+	}
+	.login{
+		width: 30%;
+	}
+
+}

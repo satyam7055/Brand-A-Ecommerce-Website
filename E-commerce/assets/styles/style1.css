@@ -1,0 +1,292 @@
+body{
+	margin: 0px auto;
+	width: 100%;
+}
+header{
+	width: 100%; height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0, 0, 0, 0.3)),url('../img/background.jpg');
+	background-repeat: no-repeat; 
+	background-size: cover;
+}
+nav{
+	width: 100%;height: 7.5vh;
+	background: lightskyblue;
+	display: flex;
+	justify-content: space-between;
+	align-items: center; text-transform: uppercase;
+	position: fixed;
+	
+}
+nav .sheet{
+	padding-left: 18px;
+}
+nav .menu li{
+	float: left;
+	padding-right: 2em;
+	list-style-type: none;
+}
+nav .menu li a{
+	text-decoration: none;
+	font-weight: 700;
+
+}
+main{
+	width: 100%;
+	height: 100vh;
+}
+
+.background{
+	padding-top: 50px;
+	
+}
+
+.background h1{
+	padding-top: 25px;
+	padding-left: 20px;
+	font-size: 30px;
+	font-weight: 300;
+	text-shadow: 1px 1px 1px black;
+}
+.background .inner .inner-list li{
+	list-style-type: none;
+	float: left;
+	font-size: 20px;
+	padding-right: 10px;
+}
+.background .inner .inner-list li:last-child{
+	list-style-type: none;
+	float: none;
+}
+.background .inner .inner-list li:not(:first-child)::before{
+	content: '|';
+	padding-left: 5px;
+}
+.border{
+	height: 100vh;
+	max-width: 1920px;
+	display: flex;
+	border-width: thick;
+	border-style: solid;
+	border-top: 3px;
+	background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0, 0, 0, 0.3)),url('../img/picture1.jpg');
+	background-size: cover;
+} 
+.border h1{
+	margin: 40% 0px 4px 10px;
+	padding-left: 15px;
+	padding-top: 10px;
+	font-size: 30px;
+}
+.border .inner ul{
+	list-style-type: none;
+	text-align: left;
+	font-size: 20px;
+	line-height: 40px;
+	float: left;
+	padding-right: 5px;
+}
+.boxmodel{
+	height: 100vh;
+	max-width: 1920px;
+	display: table-cell;
+	background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0, 0, 0, 0.2)),url('../img/picture2.jpg');
+}
+.floatright{
+	margin-top: 40px;
+	float: right;
+	padding-right: 1em;
+	color: white;
+    
+}
+.floatleft{
+    margin-top: 70px;
+	float: left;
+	color: white;
+    
+}
+.height{
+	margin-top: 60px;
+    height:60vh;
+    color: white;
+    
+}
+.maxheight{
+  max-height: 150px;
+  overflow:scroll;
+}
+.maxheight p{
+	font-size: 20px;
+	background-color: lightgoldenrodyellow;
+
+}
+.minheight{
+  font-size: 25px;
+  min-height: 80px;
+  padding: 20px;
+  background-color: salmon;
+}
+.fonts{
+	height: 100vh;
+	max-width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0, 0.4)),url('../img/picture3.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.fonts h1{
+	padding-top: 70px;
+	padding-left: 25px;
+	line-height: 40px;
+	font-size: 40px;
+	color: white;
+    
+
+}
+.fonts h2{
+	padding-left: 25px;
+	line-height: 40px;
+	font-size: 38px;
+	font-family: 'Cormorant Garamond', serif;
+	font-weight: bold 700;
+	font-style: italic;
+	color: white;
+    
+}
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('CormorantGaramond-Bold.woff2') format('woff2'),
+        url('CormorantGaramond-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('CormorantGaramond-LightItalic.woff2') format('woff2'),
+        url('CormorantGaramond-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('CormorantGaramond-BoldItalic.woff2') format('woff2'),
+        url('CormorantGaramond-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('CormorantGaramond-Italic.woff2') format('woff2'),
+        url('CormorantGaramond-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('CormorantGaramond-Light.woff2') format('woff2'),
+        url('CormorantGaramond-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('CormorantGaramond-SemiBoldItalic.woff2') format('woff2'),
+        url('CormorantGaramond-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('CormorantGaramond-Regular.woff2') format('woff2'),
+        url('CormorantGaramond-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('CormorantGaramond-Medium.woff2') format('woff2'),
+        url('CormorantGaramond-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('CormorantGaramond-SemiBold.woff2') format('woff2'),
+        url('CormorantGaramond-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('CormorantGaramond-MediumItalic.woff2') format('woff2'),
+        url('CormorantGaramond-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+.table{
+	max-width: 1920px;
+	height: 100vh;
+	padding: 100px;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0, 0.4)),url('../img/picture4.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.table table{
+  width:1000px;
+  text-align: center;
+  table-layout: fixed;
+
+}
+.table{
+  overflow-x:scroll;
+}
+th{
+   background-color: #4CAF50;
+   padding: 15px;
+}
+td{
+	padding: 10px;
+}
+table, th, td{
+border: 2px solid lavender;
+}
+tr:nth-child(odd){
+  background-color: lightpink;
+}
+tr:nth-child(even):hover{
+  background-color: red;
+}
+.text{
+	max-width: 1920px;
+	height: 100vh;
+	padding: 40px 10px;
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.5)),url('../img/picture5.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.text p{
+  text-align: justify;
+  letter-spacing: 2px;
+  padding: 33px 5px;
+  color: white;
+  word-break:loose;
+  text-decoration:blink;
+  text-shadow: 5px 0px 8px orange;
+}

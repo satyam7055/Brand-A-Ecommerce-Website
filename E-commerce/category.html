@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width initial-scale=1 shrink-to fit=no">
+    	<title>Product By Category</title>
+    	<link rel="stylesheet" type="text/css" href="assets/styles/style4.css">
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    	<script src="https://kit.fontawesome.com/007e1eb28c.js" crossorigin="anonymous"></script>
+    	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	
+</head>
+<body>
+	
+
+   <!-------------------NAVBAR------------->
+ <section class="header_menu" id="header_menu">
+  <div class="container-fluid px-0 shadow height:30">
+    
+
+  <div class="nav-bar">	
+  <nav class="navbar navbar-expand-md navbar-dark bg-black">
+  <a class="navbar-brand" href="#"><img src="assets/img1/id1.png"style="border-radius:100%"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+
+  	<ul class="navbar-nav ml-auto">
+      <form class="searchform">
+      	<div class="form-group d-flex">
+      	<input type="search" class="form-control pl-3" placeholder="Search">
+      	<button type="submit" placeholder="" class="form-control search">
+      	<span class="fas fa-search text-dark"></span></button></div>
+      </form>
+  </ul>
+  	 
+    <ul class="navbar-nav ml-auto">
+      
+      <li class="nav-item active">
+        <a class="nav-link" href="E-Commerce.html">Home</a>
+      </li><li class="nav-item">
+        <a class="nav-link" href="product_list.html">Product</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Category</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+      
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"><i class="fa fa-user"></i>
+          Profile</a>
+        <div class="dropdown-menu">
+           <p class="text-center">Welcome to BRAND</p>
+           <div class="dropdown-divider"></div>	
+          <a class="dropdown-item" href="#">My Account</a>
+          <a class="dropdown-item" href="login.html">Log In</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="signup.html">Sign Up</a>
+        </div>
+      </li>
+      <li class="nav-item">
+    		<a class="nav-link" href="#"><i class="fa fa-shopping-cart fa-1.5x"></i>Cart</a>
+    	</li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+  </div>
+</section>
+<!--------------nav ends---------->
+
+<section class="products py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-10 mx-auto col-sm-6 text-center">
+        <h1 class="text-capitalize product-title">Featured Products</h1>
+      </div>
+    </div>
+  <!-----------products item---------->
+    <div class="row product-items" id="product-items">
+      <!---------------first item---------->
+      <div class="col-10 col-sm-8 col-lg-4 mx-auto my-3">
+        <div class="card single-item">
+          <div class="img-container">
+            <img src="assets/img1/aa1.jpg" alt=""
+            class="card-img-top product-img"></div>
+            <div class="card-body">
+              <div class="card-textd-flex justify-conent-between text-capitalize">
+                <button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye"></i></button>
+              
+            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+                <a href="cart.html"><button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button></a>
+                <h5 id="item-name">Kaveri<br>Red Floral Print Wrap Dress</h5>
+                <span><i class="fa fa-inr">899.00</i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+              <!---------------first item---------->
+      <div class="col-10 col-sm-8 col-lg-4 mx-auto my-3">
+        <div class="card single-item">
+          <div class="img-container">
+            <img src="assets/img1/aa2.jpg" alt=""
+            class="card-img-top product-img">
+          </div>
+            <div class="card-body">
+              <div class="card-textd-flex justify-conent-between text-capitalize">
+                <button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye"></i></button>
+              
+            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+                <a href="cart.html"><button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button></a>
+                <h5 id="item-name">Roma<br>Baby Girl Outfit</h5>
+                <span><i class="fa fa-inr">499.00</i></span>
+
+              </div>
+            </div>
+          </div>
+        </div>
+              <!---------------first item---------->
+      <div class="col-10 col-sm-8 col-lg-4 mx-auto my-3">
+        <div class="card single-item">
+          <div class="img-container">
+            <img src="assets/img1/aa3.jpg" alt=""
+            class="card-img-top product-img"></div>
+            <div class="card-body">
+              <div class="card-textd-flex justify-conent-between text-capitalize">
+                <button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye"></i></button>
+              
+            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+                <a href="cart.html"><button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button></a>
+                <h5 id="item-name">Black Berry<br>Clothing Men's Suit</h5>
+                <span><i class="fa fa-inr">4990.00</i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+              <!---------------first item---------->
+      <div class="col-10 col-sm-8 col-lg-4 mx-auto my-3">
+        <div class="card single-item">
+          <div class="img-container">
+            <img src="assets/img1/aa4.jpg" alt=""
+            class="card-img-top product-img"></div>
+            <div class="card-body">
+              <div class="card-textd-flex justify-conent-between text-capitalize">
+                <button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye"></i></button>
+              
+            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+                <a href="cart.html"><button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button></a>
+                <h5 id="item-name">High Heal<br>Red gown</h5>
+                <span><i class="fa fa-inr">1399.00</i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+              <!---------------first item---------->
+      <div class="col-10 col-sm-8 col-lg-4 mx-auto my-3">
+        <div class="card single-item">
+          <div class="img-container">
+            <img src="assets/img1/aa5.jpg" alt=""
+            class="card-img-top product-img"></div>
+            <div class="card-body">
+              <div class="card-textd-flex justify-conent-between text-capitalize">
+                <button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye"></i></button>
+              
+            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+                <a href="cart.html"><button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button></a>
+                <h5 id="item-name">Baby frock</h5>
+                <span><i class="fa fa-inr">650.00</i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+              <!---------------first item---------->
+      <div class="col-10 col-sm-8 col-lg-4 mx-auto my-3">
+        <div class="card single-item">
+          <div class="img-container">
+            <img src="assets/img1/aa6.jpg" alt=""
+            class="card-img-top product-img"></div>
+            <div class="card-body">
+              <div class="card-textd-flex justify-conent-between text-capitalize">
+                <button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye"></i></button>
+              
+            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+                <a href="cart.html"><button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button></a>
+                <h5 id="item-name">Spark Men's Blue Stylish Shoes</h5>
+                <span><i class="fa fa-inr">780.00</i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+              <!---------------first item---------->
+      <div class="col-10 col-sm-8 col-lg-4 mx-auto my-3">
+        <div class="card single-item">
+          <div class="img-container">
+            <img src="assets/img1/aa7.jpg" alt=""
+            class="card-img-top product-img"></div>
+            <div class="card-body">
+              <div class="card-textd-flex justify-conent-between text-capitalize">
+                <button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye"></i></button>
+              
+            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+                <a href="cart.html"><button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button></a>
+                <h5 id="item-name">Bata<br>Men's Casual Fit Black Shoe</h5>
+                <span><i class="fa fa-inr">1199.00</i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+              <!---------------first item---------->
+      <div class="col-10 col-sm-8 col-lg-4 mx-auto my-3">
+        <div class="card single-item">
+          <div class="img-container">
+            <img src="assets/img1/aa8.jpg" alt=""
+            class="card-img-top product-img"></div>
+            <div class="card-body">
+              <div class="card-textd-flex justify-conent-between text-capitalize">
+                <button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye"></i></button>
+              
+            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+                <a href="cart.html"><button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button></a>
+                <h5 id="item-name">Angel<br>Stylish party wear Sandal</h5>
+                <span><i class="fa fa-inr">1199.00</i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+              <!---------------first item---------->
+      <div class="col-10 col-sm-8 col-lg-4 mx-auto my-3">
+        <div class="card single-item">
+          <div class="img-container">
+            <img src="assets/img1/aa9.jpg" alt=""
+            class="card-img-top product-img"></div>
+            <div class="card-body">
+              <div class="card-textd-flex justify-conent-between text-capitalize">
+                <button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye"></i></button>
+              
+            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+                <a href="cart.html"><button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button></a>
+                <h5 id="item-name">Nike<br>Men's White Sneaker</h5>
+                <span><i class="fa fa-inr">5599.00</i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+              <!---------------first item---------->
+      <div class="col-10 col-sm-8 col-lg-4 mx-auto my-3">
+        <div class="card single-item">
+          <div class="img-container">
+            <img src="assets/img1/aa10.jpg" alt=""
+            class="card-img-top product-img"></div>
+            <div class="card-body">
+              <div class="card-textd-flex justify-conent-between text-capitalize">
+                <button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye"></i></button>
+              
+            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+                <a href="cart.html"><button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button></a>
+                <h5 id="item-name text-center">ROADESTER<br>Men's Brown Belt</h5>
+                <span><i class="fa fa-inr">349.00</i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+              <!---------------first item---------->
+      <div class="col-10 col-sm-8 col-lg-4 mx-auto my-3">
+        <div class="card single-item">
+          <div class="img-container">
+            <img src="assets/img1/aa11.png" alt=""
+            class="card-img-top product-img"></div>
+            <div class="card-body">
+              <div class="card-textd-flex justify-conent-between text-capitalize">
+                <button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye"></i></button>
+              
+            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+                <a href="cart.html"><button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button></a>
+                <h5 id="item-name">Adidas<br>Fashionable Ladies Bag</h5>
+                <span><i class="fa fa-inr">799.00</i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+              <!---------------first item---------->
+      <div class="col-10 col-sm-8 col-lg-4 mx-auto my-3">
+        <div class="card single-item">
+          <div class="img-container">
+            <img src="assets/img1/aa12.jpg" alt=""
+            class="card-img-top product-img"></div>
+            <div class="card-body">
+              <div class="card-textd-flex justify-conent-between text-capitalize">
+                <button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye"></i></button>
+              
+            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+                <a href="cart.html"><button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button></a>
+                <h5 id="item-name">Eda<br>Ladies Ear Ring</h5>
+                <span><i class="fa fa-inr">499.00</i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+  <!-------------product items end--------> 
+
+  </div>
+</section>
+
+<!----------Follow Us Page--------------->
+
+<section class="follow" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h2>Follow Us On</h2></div>
+      <div class="col-md-3 follow-box">
+                    <span class="img2"><i class="fa fa-facebook"></i>Facebook</span>      
+      </div>
+      <div class="col-md-3 follow-box">
+                    <span class="img2"><i class="fa fa-instagram"></i>Instagram</span>      
+      </div>
+      <div class="col-md-3 follow-box">
+                    <span class="img2"><i class="fa fa-twitter"></i>Twitter</span>      
+      </div>
+      <div class="col-md-3 follow-box">
+                    <span class="img2"><i class="fa fa-linkedin"></i>LinkedIn</span>      
+      </div>
+  </div>
+  </div>
+</section>
+
+
+
+<!------------footer---------------------->
+
+<section class="footer py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <img src="assets/img1/id1.png"style="border-radius:100%">
+        <p>A BRAND group of Companies <br>Owned by Satyam Kumar</p>
+        
+      </div>
+      <div class="col-md-3">
+        <h1>Quick Links</h1>
+        <p>About Us</p>
+        <p>Contact Us</p>
+        <p>Career</p>
+        <p>Affiliate</p>
+      </div>
+      
+
+      <div class="col-md-3">
+        <h1>Support</h1>
+        <p>Frequently Asked Questions</p>
+        <p>Terms and Conditions</p>
+        <p>Privacy Policy</p>
+        <p>Report a payment issue</p>
+      </div>
+            
+            <div class="col-md-3 footer-image">
+              <h1>Download App</h1>
+              <img src="assets/img1/app-store.png" class="play-img">
+              <img src="assets/img1/play.jpg">
+    </div>
+  </div>
+  <hr>
+  <p class="copyright">Made By  <i class="fa fa-heart-o"></i>Satyam Kumar</p>
+</div>
+</section>
+
+
+</body>
+</html>
